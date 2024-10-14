@@ -5,14 +5,15 @@ class Solution {
         
         int size=str.length;
             
-            String out="";
+        StringBuilder sb=new StringBuilder();
             
           for(int i =size-1 ;i>=0; i--)  
           {
-              out = out+ " " + str[i];
+              sb.append(str[i]);
+              sb.append(" ");
           }
         
-        out=out.trim();
-        return out;
+        
+        return sb.toString().trim();
     }
 }
